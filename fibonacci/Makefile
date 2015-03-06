@@ -5,7 +5,7 @@ classes = $(sources:.java=.class)
 all: $(classes)
 
 test: all
-	java Fibonacci 
+	java TestFibonacci 
 
 clean :
 	rm -f *.class
