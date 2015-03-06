@@ -5,7 +5,7 @@ classes = $(sources:.java=.class)
 all: $(classes)
 
 test: all
-	java FizzBuzz
+	java FizzBuzz| diff -q FizzBuzz.output -
 
 clean :
 	rm -f *.class
